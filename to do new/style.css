@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./background.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-container {
+  width: 700px;
+  height: auto;
+  min-height: 400px;
+  padding: 35px;
+  background: transparent;
+  border: 2px solid #e561f7a1;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+}
+
+.ta-wrapper {
+  background: transparent;
+  color: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 7px 7px rgb(0 0 0 / 20%);
+  min-height: 350px;
+}
+
+.heading h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.input-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-wrapper input {
+  outline: none;
+  border: 0;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  color: rgb(245, 232, 232);
+  flex: 1;
+  margin-right: 10px;
+}
+
+.input-wrapper input::placeholder {
+  color: rgb(223, 208, 208);
+}
+
+.input-wrapper button {
+  background: #ee487f;
+  color: white;
+  border: 0;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.action-button {
+  background: #414042a1;
+  color: white;
+  border: 0;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: pointer;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.action-button:last-child {
+  margin-right: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(8, 8, 8, 0.2);
+  padding-bottom: 10px;
+}
+
+.todo-item input.text {
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  flex: 1;
+}
+
+.todo-item i {
+  color: #f3f3f3;
+  background: #e45c89;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-left: 5px;
+}
+
+.todo-item button:hover {
+  color: white;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.fa-x {
+  padding: 6px 8px !important;
+}
+
+.todo-checkbox {
+  margin-right: 10px;
+}
